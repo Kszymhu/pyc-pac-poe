@@ -38,9 +38,8 @@ class BoardGraphics:
 
         return line
 
-    @classmethod
+    @staticmethod
     def __construct_field_line(
-            cls,
             fields: list[str],
             number: int,
             max_digits: int) -> str:

@@ -22,8 +22,8 @@ class BoardLogic:
 
         return True
 
-    @classmethod
-    def execute_move(cls, data: BoardData, row: int, column: int, character: str) -> None:
+    @staticmethod
+    def execute_move(data: BoardData, row: int, column: int, character: str) -> None:
         """Executes a given move.
         """
         data.set_field(row, column, character)
